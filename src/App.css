@@ -40,3 +40,26 @@
 .read-the-docs {
   color: #888;
 }
+.squareField {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border: 3px solid gray;
+  padding: 14px;
+  width: 160px;
+}
+
+.objectBlock {
+  width: 20px;
+  height: 20px;
+  background: #8e8e8e;
+  padding: 2px;
+  margin-bottom: 2px;
+}
+
+.blockThatHasBeenOpened {
+  background: #fff;
+  width: 30px;
+  height: 30px;
+  padding: 3px;
+}
