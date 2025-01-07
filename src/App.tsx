@@ -29,14 +29,17 @@ const generateBoardField = () => {
 
 if (blockItems.length === 0) {
   generateBoardField();
-} else {
-  console.log(blockItems);
 }
+
+const clickedOnBlockCell = (index: number) => {
+  console.log(index);
+};
+
   return (
     <>
       <div className="squareField">
         {blockItems.map(blockItem => (
-          <div className={blockItem.class}></div>
+          <div onClick={() => clickedOnBlockCell(blockItem.id)} key={blockItem.id} className={blockItem.class}></div>
         ))}
 
       </div>
