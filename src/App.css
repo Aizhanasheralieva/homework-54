@@ -45,7 +45,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   border: 3px solid gray;
-  padding: 14px;
+  padding: 20px;
   width: 160px;
 }
 
@@ -54,7 +54,7 @@
   height: 20px;
   background: #8e8e8e;
   padding: 2px;
-  margin-bottom: 2px;
+  margin-bottom: 1px;
 }
 
 .blockThatHasBeenOpened {
