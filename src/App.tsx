@@ -34,17 +34,12 @@ const App = () => {
 
   const clickedOnBlockCell = (index: number) => {
     console.log(index);
-    setBlockItems(
-      blockItems.map((blockItem) => {
+    setBlockItems(prevState =>
+      prevState.map((blockItem) => {
         if (blockItem.id === index) {
           if (blockItem.hasItem === false) {
-            if (blockItem.class === "objectBlock") {
-              setNumberOfTries((prevState) => prevState + 1);
               return { ...blockItem, class: "objectOpen" };
-            }
-            console.log(blockItem);
-          } else if (blockItem.hasItem === true) {
-            setNumberOfTries((prevState) => prevState + 1);
+          } else {
             return { ...blockItem, class: "circle" };
           }
         }
@@ -52,6 +47,8 @@ const App = () => {
         return blockItem;
       }),
     );
+
+    setNumberOfTries((prevState) => prevState + 1);
   };
 
   return (
